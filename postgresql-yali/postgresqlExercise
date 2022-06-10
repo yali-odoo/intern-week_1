@@ -125,11 +125,3 @@ Q3:The zip codes in our example dataset have had leading zeroes removed from the
 SELECT LPAD(cast(zipcode AS CHAR(5)),5,'0') zip 
        FROM cd.members 
 	   ORDER BY zip;
-	   
-#Recursive
-
-Q1:Find the upward recommendation chain for member ID 27: that is, the member who recommended them, and the member who recommended that member, and so on. Return member ID, first name, and surname. Order by descending member id. 
-
-Q2:Find the downward recommendation chain for member ID 1: that is, the members they recommended, the members those members recommended, and so on. Return member ID and name, and order by ascending member id. 
-
-Q3:Produce a CTE that can return the upward recommendation chain for any member. You should be able to select recommender from recommenders where member=x. Demonstrate it by getting the chains for members 12 and 22. Results table should have member and recommender, ordered by member ascending, recommender descending. 
