@@ -110,6 +110,6 @@ nyt.attach(subscriber_b)
 subscriber_c = KeyWordSubscriber("Biden")
 nyt.attach(subscriber_c)
 
-nyt.publish_news_item("business", "Facebook goes down for 5 hours.")
-nyt.publish_news_item("politics", "biden calls for debt limit ceiling to be raised.")
+nyt.publish_news_item("business", "Starbucks may close its bathrooms to the public again.")
+nyt.publish_news_item("politics", "Chesa Boudin is out in San Francisco, but his agenda is alive in California.")
 

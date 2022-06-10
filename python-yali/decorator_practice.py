@@ -79,17 +79,17 @@ print(add(9,5))
     Write a Python program to make a chain of 
 function decorators (bold, italic, underline etc.).
 '''
-def make_bold(fn):
+def bold(fn):
     def wrapper():
         return "<b>" + fn() + "</b>"
     return wrapper
 
-def make_italic(fn):
+def italic(fn):
     def wrapper():
         return "<i>" + fn() + "</i>"
     return wrapper
 
-def make_underline(fn):
+def underline(fn):
     def wrapper():
         return "<u>" + fn() + "</u>"
     return wrapper
