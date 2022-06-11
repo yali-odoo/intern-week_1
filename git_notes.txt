@@ -1,0 +1,15 @@
+basic
+1.configure git(set up git configuration values on global or local project)
+
+--->git config  [--global]|[--local]|[--system]
+   1.git config --global user.name "name"
+     git config --global user.email "email"
+   
+   2.default editor to be prompt in git
+   git config --global core.editor "editor name"
+   
+   3.colored outputs
+   git config --global color.ui [false]|[true]
+
+   //core.autocrlf  ->autocrlf in git used to change how git handles the line endings
+
